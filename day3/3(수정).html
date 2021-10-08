@@ -7,104 +7,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publishing 3</title>
     <style>
-        .commonBox {
+            * {
+                list-style: none;
+                margin: 0; 
+                padding: 0; 
+                box-sizing: border-box; 
+            }
+
+            .commonBox {
             width: 100%;
             float: left;
             border: 2px solid;
-            margin: 10px;
-        }
+            }
 
-        .commonBox>div {
-            display: block;
+            .commonBox > div {
             width: 1200px;
             margin: 0 auto;
-        }
+            }
 
-        .commonBox>div>div {
-            display: block;
+            .commonBox > div > div {
             width: 100%;
             float: left;
-        }
+            }
 
-        .commonBox>div>div>.blue_box {
-            display: block;
+            .commonBox > div  > div > .blue_box {
             border: 2px solid #0000ff;
-            margin: 10px auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+            width: 100%;
+            margin: 20px auto;
+            float: left;
+            text-align: center;
+            }
 
-        .commonBox>div>div>.blue_box>.green_box {
-            display: block;
-            border: 2px solid #00ff00;
-            width: 250px;
-            margin: 10px auto;
-            padding: 20px;
-        }
+            .commonBox > div > div > .blue_box > .green_box {
+            border: 2px solid green;
+            width: 19%;
+            float: left;
+            margin: 10px 3px;
+            }
 
-        .commonBox>div>div>.blue_box>.orange_box {
-            display: block;
-            border: 2px solid #ffa500;
-            width: 750px;
-            margin: 10px auto;
-        }
+            .commonBox > div > div > .blue_box > .green_box > .gray_box {
+            border: 2px solid gray;
+            width: 80%;
+            float: left;
+            margin: 10px 20px;
+            }
 
-        .gray_box {
-            display: block;
+            .gray_box {
             border: 2px solid #808080;
             width: 80%;
-            margin: 10px auto;
+            margin: 10px 80px;
             text-align: center;
-        }
+            float: left;
+            }
 
-        .green_box ul {
-            display: block;
-            list-style: none;
-            margin: 10px -10px;
-        }
+            .commonBox > div > div > .blue_box > .orange_box {
+            border: 2px solid orange;
+            width: 79%;
+            float: left;
+            margin: 10px 5px;
+            }
 
-        .green_box ul li {
-            display: block;
-            border: 2px solid #808080;
-            margin: 0 auto;
-            text-align: center;
-        }
+            .commonBox > div > div > .blue_box > .orange_box > ul {
+            float: left;
+            width: 100%;
+            margin: 10px 40px;
+            }
 
-        .opt ul li {
-            display: block;
-            margin-right: 30px;
-        }
+            .commonBox > div > div > .blue_box > .orange_box > ul > li {
+            border: 2px solid gray;
+            border-right: none;
+            float: left;
+            width: 18%;
+            }
 
-        .orange_box ul {
-            display: block;
-            list-style: none;
-            padding: 0;
-            margin: 20px 100px;
-        }
+            .commonBox > div > div > .blue_box > .orange_box > ul > li:last-child {
+            border-right: 2px solid gray;
+            }
 
-        .orange_box ul li {
-            display: inline-block;
-            border: 2px solid #808080;
-            margin: 10px -3px;
-            padding: 0 20.9px;
-        }
+            .opt ul {
+            padding: 10px;
+            float: left;
+            width: 100%;
+            }
 
-        .write {
-            display: block;
+            .opt ul li{
+            width: 80%;
+            float: left;
+            border: 2px solid gray;
+            border-bottom: none;
+            margin-left: 20px;
+            margin-right: 20px;
+            }
+
+            .opt ul li:last-child {
+            border-bottom: 2px solid gray;
+            }
+
+            .write {
             text-align: left;
-            width: 70%;
-            margin: 5px;
-        }
+            border: 2px solid gray;
+            width: 80%;
+            float: left;
+            padding: 10px;
+            margin: 20px;
+            }
 
-        .write p {
-            display: block;
+            .write p {
             color: #ccc;
-        }
+            }
 
-        .write span {
+            .write span {
             color: #00ff00;
-        }
+            }
     </style>
 </head>
 
@@ -119,13 +133,13 @@
                         <div class="gray_box">로고</div>
                     </div>
                     <div class="orange_box">
-                        <ul>
-                            <li>01_menu</li>
-                            <li>02_menu</li>
-                            <li>03_menu</li>
-                            <li>04_menu</li>
-                            <li>05_menu</li>
-                        </ul>
+                            <ul>
+                                <li>01_menu</li>
+                                <li>02_menu</li>
+                                <li>03_menu</li>
+                                <li>04_menu</li>
+                                <li>05_menu</li>
+                            </ul>
                     </div>
                 </div>
             </div>
