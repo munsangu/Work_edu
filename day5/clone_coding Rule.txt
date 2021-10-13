@@ -1,0 +1,13 @@
+http://edu1019.shiningcorp.com/index.php?device=pc  클론 코딩
+
+1. index.php / style.css / main.js
+
+2. 구조 * 기능 구현 중심 
+
+3. 컷닝 불가 -> 여백 / 글자 크기 등은 동일하게 
+
+4. 1차 Feedback -> 10.15 까지 전대리님께 제출
+
+5. 이미지 위에 슬라이드 올리기
+
+6. ⓒ 원 속에 + 는 css로 구현(버튼)

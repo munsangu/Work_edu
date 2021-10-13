@@ -6,177 +6,218 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publishing4</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-size: 30px;
+            font-size: 16px;
+            text-align: center;
         }
 
         .commonBox {
             width: 100%;
             float: left;
         }
-        
-        .blue_box {
-            border:2px solid #b4cbfe;
+
+        .commonBox .blue_box {
             width: 100%;
             float: left;
-            text-align: center;
-            padding: 10px;
+            border: 2px solid #00f;
+            padding: 0 1%;
         }
 
-        .blue_box > div {
-            margin: 5px 50px;
-        }
-
-        .blue_box > .left, 
-        .blue_box > .right {
-            width: 11%;
+        .commonBox .blue_box .left,
+        .commonBox .blue_box .right {
+            width: 12%;
             float: left;
             background-color: #b4cbfe;
-            padding: 30px;
+            padding: 1.8%;
+            margin: 1.2%
         }
 
-        .blue_box > .middle {
+        .commonBox .blue_box .middle {
+            width: 68%;
+            float: left;
             background-color: #b4cbfe;
-            width: 61%;
-            float: left;
-            padding: 7px;
-            margin-right: -10px;
-            margin-left: 10px;
-        }
-
-        .blue_box > .sub_logo {
-            background-color: #ccc;
-            width: 11%;
-            float: left;
-            padding: 10px;
-            margin-right: 10px;
-        }
-
-        .blue_box > .footer {
-            background-color: #ccc;
-            width: 74%;
-            float: left;
-            padding: 10px;
+            padding: 1.8%;
+            margin: 1.2%
         }
 
         .gray_box {
             border: 2px solid #ccc;
             width: 100%;
             float: left;
-            padding: 10px;
+            padding: 2%;
         }
 
-        .mini_gray {
-            width: 17.5%;
-            float:left;
+        .gray_box .mini_gray {
+            width: 20%;
+            float: left;
+            padding: 0 2%;
+        }
+
+        .gray_box .mini_gray div {
+            width: 100%;
+            float: left;
             background-color: #eeddee;
-            padding: 30px;
-            margin-right: 5px
-        }
-
-        .mini_gray:first-child {
-            margin-left: 50px;
+            padding: 20%;
         }
 
         .green_box {
-            border: 2px solid #0f0;
-            background-color: #a5c3b4;
             width: 100%;
             float: left;
-            text-align: center;
-            padding: 100px;
+            border: 2px solid #5ac18e;
+            background-color: #5ac18e;
+            padding: 20%;
         }
 
         .orange_box {
+            width: 100%;
+            float: left;
             border: 2px solid #ffa500;
-            width: 100%;
-            float: left;
-            text-align: center;
+            padding: 1%;
         }
 
-        .orange_box > .mini_orange {
-            width: 48%;
+        .orange_box .mini_orange {
+            width: 50%;
             float: left;
+        }
+
+        .orange_box .mini_orange div {
             background-color: #fce5cd;
-            padding: 5px;
-            margin: 5px;
-        }
-
-        .orange_box > .opt {
-            width: 100%;
-            float: left;
-            margin: 10px;
-            padding: 20px;
+            padding: 20%;
+            margin: 1%;
         }
 
         .red_box {
-            border: 2px solid #f00;
             width: 100%;
             float: left;
-            padding: 10px;
+            border: 2px solid #f00;
+            padding: 2.5%;
         }
 
-        .red_box > .container {
-            margin: 5px 35px;
-        }
-
-        .mini_red {
+        .red_box .mini_red {
             width: 30%;
             float: left;
-            background-color: #ffc9de;
-            padding: 30px;
-            margin: 5px;
+            margin: 1.5%;
         }
 
+        .red_box .mini_red div {
+            background-color: #ffc9de;
+            padding: 10%;
+        }
 
+        .orange_box .opt {
+            background-color: #fce5cd;
+            width: 100%;
+            float: left;
+            margin: .3%;
+            padding: 10%;
+        }
 
+        .blue_box .sub_logo,
+        .blue_box .footer {
+            background-color: #eeddee;
+            padding: 5% 0;
+            margin: 2%;
+        }
+
+        .sub_logo {
+            width: 15%;
+            float: left;
+        }
+
+        .footer {
+            width: 75%;
+            float: left;
+        }
     </style>
 </head>
 
 <body>
-<div class="commonBox">
-    <div class="blue_box">
-        <div class="left"><i class="fas fa-bars"></i></div>
-        <div class="middle"><img src="Banner.PNG" alt="Banner"></div>
-        <div class="right"><i class="fas fa-home"></i></div>
+    <div class="commonBox">
+        <div class="blue_box">
+            <div class="left">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="middle">
+                IMAGE
+            </div>
+            <div class="right">
+                <i class="fas fa-home"></i>
+            </div>
+        </div>
     </div>
-    <div class="gray_box">
-        <div class="mini_gray"></div>
-        <div class="mini_gray"></div>
-        <div class="mini_gray"></div>
-        <div class="mini_gray"></div>
-        <div class="mini_gray"></div>
+    <div class="commonBox">
+        <div class="gray_box">
+            <div class="mini_gray">
+                <div></div>
+            </div>
+            <div class="mini_gray">
+                <div></div>
+            </div>
+            <div class="mini_gray">
+                <div></div>
+            </div>
+            <div class="mini_gray">
+                <div></div>
+            </div>
+            <div class="mini_gray">
+                <div></div>
+            </div>
+        </div>
     </div>
-    <div class="green_box">
-        Main Visual Area
+    <div class="commonBox">
+        <div class="green_box">
+            Main Visual Area
+        </div>
     </div>
-    <div class="orange_box">
-        <div class="mini_orange">Banner2</div>
-        <div class="mini_orange">Banner2</div>
+    <div class="commonBox">
+        <div class="orange_box">
+            <div class="mini_orange">
+                <div>Banner2</div>
+            </div>
+            <div class="mini_orange">
+                <div>Banner2</div>
+            </div>
+        </div>
     </div>
-    <div class="red_box">
-        <div class="container">
-            <div class="mini_red"></div>
-            <div class="mini_red"></div>
-            <div class="mini_red"></div>
-            <div class="mini_red"></div>
-            <div class="mini_red"></div>
-            <div class="mini_red"></div>
-        </div> 
+    <div class="commonBox">
+        <div class="red_box">
+            <div class="mini_red">
+                <div></div>
+            </div>
+            <div class="mini_red">
+                <div></div>
+            </div>
+            <div class="mini_red">
+                <div></div>
+            </div>
+            <div class="mini_red">
+                <div></div>
+            </div>
+            <div class="mini_red">
+                <div></div>
+            </div>
+            <div class="mini_red">
+                <div></div>
+            </div>
+        </div>
     </div>
-    <div class="orange_box">
-        <div class="mini_orange opt"></div>
+    <div class="commonBox">
+        <div class="orange_box">
+            <div class="mini_orange opt"></div>
+        </div>
     </div>
-    <div class="blue_box">
-        <div class="sub_logo">Sub Logo</div>
-        <div class="footer">Copylight</div>
+    <div class="commonBox">
+        <div class="blue_box">
+            <div class="sub_logo">SubLogo</div>
+            <div class="footer">Copylight</div>
+        </div>
     </div>
-</div>
 </body>
 
 </html>

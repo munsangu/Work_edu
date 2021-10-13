@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    color: #000;
+}
+
+span {
+    color: #ffa500;
+}
+
+.container {
+    width: 100%;
+    float: left;
+}
+
+.container > div {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container > div > div {
+    width: 100%;
+    float: left;
+}
+
+.container > div > div > .middle_box {
+    width: 100%;
+    float: left;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.container > div > div > .middle_box > .right_box {
+    width: 19%;
+    float: left;
+    margin: 10px 5px;
+    white-space: nowrap;
+}
+
+.main_logo {
+    width: 80%;
+    float: left;
+    margin: 10px 20px;
+}
+
+.container > div > div > .middle_box > .left_box {
+    width: 79%;
+    float: left;
+    margin: 10px 5px;
+}
+
+.container > div > div > .middle_box > .left_box > ul {
+    width: 100%;
+    float: left;
+    margin: 10px 40px;
+}
+
+.container > div > div > .middle_box > .left_box > ul > li {
+    border-right: none;
+    width: 23%;
+    float: left;
+    text-align: center;
+    padding: 10px 0 30px;
+}
+
+.dropbox {
+    display: none;
+}
+
+.container > div > div > .middle_box > .left_box > ul > li:hover > .dropbox {
+    display: block;
+    background-color: wheat;
+    padding: 30px 0 15px;
+}
+
+button {
+    border: 1px solid #ffa500;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+button .circle {
+    color: #ffa500;
+    padding: 9px;
+    font-size: 20px;
+}
+
+
+
