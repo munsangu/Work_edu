@@ -1,35 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 a {
+    text-decoration: none;
     color: #000;
 }
 
-span {
-    color: #ffa500;
-}
-
-.container {
+.commonBox {
     width: 100%;
     float: left;
 }
 
-.container > div {
+.commonBox > div {
     width: 1200px;
     margin: 0 auto;
 }
 
-.container > div > div {
+.commonBox > div > div {
     width: 100%;
     float: left;
 }
 
-.container > div > div > .middle_box {
+.commonBox > div > div > .box1 {
     width: 100%;
     float: left;
     margin: 20px auto;
@@ -37,61 +41,323 @@ span {
     text-align: center;
 }
 
-.container > div > div > .middle_box > .right_box {
+.commonBox > div > div > .box2 {
+    width: 100%;
+    float: left;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.commonBox > div > div > .box1 > .logo_box {
     width: 19%;
     float: left;
     margin: 10px 5px;
-    white-space: nowrap;
 }
 
-.main_logo {
-    width: 80%;
+.logo {
+    width: 90%;
     float: left;
     margin: 10px 20px;
 }
 
-.container > div > div > .middle_box > .left_box {
+.logo span {
+    font-size: 1.5rem;
+    color: #ffa500;
+}
+
+.logo a:hover {
+    color: #000;
+}
+
+.commonBox > div > div > .box1 > .nav_box {
     width: 79%;
     float: left;
     margin: 10px 5px;
 }
 
-.container > div > div > .middle_box > .left_box > ul {
+.commonBox > div > div > .box1 > .nav_box > ul {
     width: 100%;
     float: left;
-    margin: 10px 40px;
+    margin: 10px 25px;
+    line-height: 30px;
 }
 
-.container > div > div > .middle_box > .left_box > ul > li {
-    border-right: none;
-    width: 23%;
+.commonBox > div > div > .box1 > .nav_box > ul > li {
+    width: 25%;
     float: left;
     text-align: center;
-    padding: 10px 0 30px;
 }
 
-.dropbox {
+.commonBox > div > div > .box1 > .nav_box > ul > li > .dropdown {
+    display: none;
+    width: 100%;
+    float: left;
+    margin: 30px 0;
+    text-align: left;
+}
+
+.commonBox > div > div > .box1 > .nav_box > ul > li:hover > .dropdown {
+    display: block;
+    background: #f5f5f5;
+}
+
+.commonBox > div > div > .box2 > .title.box {
+    width: 100%;
+    float: left;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides { 
     display: none;
 }
 
-.container > div > div > .middle_box > .left_box > ul > li:hover > .dropbox {
-    display: block;
-    background-color: wheat;
-    padding: 30px 0 15px;
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 250px;
+left: 0;
+width: 10px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+}
+
+.next {
+left: 95%;
+border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+color: #ccc;
+}
+
+.dot {
+cursor: pointer;
+height: 8px;
+width: 8px;
+margin: 10px 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #ffa500;
+width: 12px;
+border-radius: 25% ;
+}
+
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+.title_box  p  {
+    font-size: 28px;
+}
+
+.commonBox > div > div > .box2 > .nav_box2 {
+    width: 100%;
+    float: left;
+}
+
+.commonBox > div > div > .box2 > .nav_box2 > ul {
+    width: 100%;
+    float: left;
+}
+
+.commonBox > div > div > .box2 > .nav_box2 > ul > li {
+    width: 33.3%;
+    float: left;
+    padding: 0px;
 }
 
 button {
-    border: 1px solid #ffa500;
-    width: 40px;
-    border-radius: 50%;
     background-color: #fff;
+    border: none;
 }
 
-button .circle {
+.nav_box2 .fa-chevron-right:hover {
+    color: #ff0;
+}
+
+b {
+    font-size: 28px;
+    color: #f00;
+}
+
+.commonBox div div .box2 .image_box {
+    background-image: url(./images/section_bg.jpg);
+    background-size: cover;
+    width: 100%;
+    padding: 80px;
+}
+.commonBox div div .box2 .image_box .image_title1 {
+    font-size: 28px;
+    color: #fff;
+}
+
+.commonBox div div .box2 .image_box .image_title1 b {
     color: #ffa500;
-    padding: 9px;
+}
+
+.commonBox div div .box2 .image_box .image_title2 {
+    font-size: 16px;
+    color: #fff;
+}
+
+.commonBox div div .box2 .image_box button {
+    border: 1px solid #fff;
+    opacity: .3;
+    padding: 10px;
+    width: 15%;
+}
+
+.commonBox div div .box2 .image_box button:hover {
+    background-color: #ffa500;
+    color: #fff;
+    opacity: 1;
+    border: none;
+}
+
+.commonBox div div .box2 .bottom_menu {
+    width: 24%;
+    float: left;
+    margin: 5px;
+}
+
+.commonBox div div .box2 .bottom_menu p {
+    font-size: 16px;
+    text-align: left;
+}
+
+.commonBox div div .box2 .bottom_menu p button {
+    float: right;
+    border: 1px solid #ffa500;
+    border-radius: 50%;
+    width: 20px;
+    font-size: 13px;
+}
+
+.commonBox div div .box2 .bottom_menu p button a {
+    color: #ffa500;
+}
+
+
+.commonBox div div .box2 .bottom_menu ul {
+    width: 100%;
+    float: left;
+}
+
+.commonBox div div .box2 .bottom_menu ul li {
+    width: 100%;
+    float: left;
+    text-align: left;
+    padding: 5px;
+}
+
+.commonBox div div .box2 .bottom_box .bottom_box_btn {
+    width: 33.3%;
+    float: right;
+    border: .5px solid;
+    margin: 7px;
+    padding: 10px 0;
+}
+
+.commonBox div div .box2 .bottom_box .bottom_box_btn a:hover {
+    color: #000;
+}
+
+.commonBox div div .box2 .bottom_box .bottom_box_btn:last-child {
+    background-color: #ffa500;
+    color: #fff;
+    line-height: 30px;
+}
+
+.commonBox div div .box2 .bottom_box .bottom_box_btn .fa-chevron-right {
+    float: right;
+    line-height: 30px;
+}
+
+.commonBox div div .footer {
+    background-color: #454545;
+}
+
+.commonBox div div .box2 .sub_nav {
+    width: 100%;
+    float: left;
+    margin: -10px 10%;
+}
+
+.commonBox div div .box2 .sub_nav ul {
+    background-color: #676767;
+    width: 80%;
+    float: left;
+}
+
+.commonBox div div .box2 .sub_nav ul li {
+    width: 18%;
+    float: left;
+    margin: 0;
+    padding: 10px;
+}
+
+.commonBox div div .box2 .sub_nav ul li a {
+    color: #fff;
+}
+
+.commonBox div div .box2 .footer_logo {
+    width: 18%;
+    float: left;
+    padding: 30px;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.commonBox div div .box2 .footer_logo span {
+    color: #ffa500;
+
     font-size: 20px;
 }
 
+.commonBox div div .box2 .footer_info {
+    width: 68%;
+    float: left;
+    text-align: left;
+    color: #fff;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.commonBox div div .box2 .footer_info button {
+    font-size: 10px;
+    float: right;
+    margin: 3px;
+    padding: 5px;
+    color: #fff;
+    background-color: #696969;
+}
 
 
