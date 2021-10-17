@@ -39,34 +39,55 @@
 }
 
 .commonBox .navBox {
-  width: 79%;
+  width: 80%;
   float: left;
-  margin: 25px 5px;
+  padding: 10px;
+  line-height: 30px;
 }
 
-.commonBox .navBox ul {
-  width: 100%;
+.navBox .main-menu {
+  width: 78%;
   float: left;
-  margin: 10px 25px;
 }
 
-.commonBox .navBox ul li {
+.navBox  .main-menu > li {
   width: 25%;
   float: left;
-  text-align: center;
+  position: relative;
+  font-size: 12.95px;
 }
 
-.commonBox .navBox .dropdown li {
-  height: 0;
-  transition: .5s;
-  overflow: hidden;
+.navBox  .main-menu > li > a {
+  display: block;
+  padding: 20px;
 }
 
-.commonBox .navBox ul li:hover .dropdown li {
-  height: 100px;
+.navBox  .sub-menu {
+  background-color: #ccc;
   position: absolute;
-  z-index: 2;
-  overflow: visible;
+  top: 83px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.navBox  .sub-menu > li {
+  width: 100%;
+  float: left;
+  padding: 16px 25px;
+}
+
+.navBox  .sub-menu > li >  a {
+  color: rgba(255,255,255,0.6);
+}
+
+.navBox  .main-menu > li:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.navBox  .sub-menu > li >  a:hover {
+ color: #000;
 }
 
 /* image slide */
