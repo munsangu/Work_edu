@@ -9,11 +9,13 @@
   text-align: center;
   font-family: 'Noto Sans KR', sans-serif;
   color: #000;
+  border: 1px solid red;
 }
 
 .commonBox {
   width: 100%;
   float: left;
+  min-width: 1200px;
 }
 
 .commonBox div {
@@ -36,6 +38,11 @@
   width: 19%;
   float: left;
   margin: 30px 5px;
+}
+
+.commonBox .logoBox img {
+  max-width: 100%;
+  vertical-align: middle;
 }
 
 .commonBox .navBox {
@@ -84,6 +91,8 @@
 .navBox  .main-menu > li:hover .sub-menu {
   opacity: 1;
   visibility: visible;
+  position: absolute;
+  z-index: 10;
 }
 
 .navBox  .sub-menu > li >  a:hover {
@@ -99,12 +108,18 @@
 .prev, .next {
 cursor: pointer;
 position: absolute;
-top: 38%;
+top: 48%;
 left: 20%;
-width: 10px;
-padding: 16px;
+width: 30px;
+padding: 18px;
 color: #000;
-font-size: 34px;
+font-size: 33px;
+}
+
+.prev i, .next i {
+  position: absolute;
+  left: 10%;
+  top: 5%;
 }
 
 .next {
@@ -124,7 +139,7 @@ border-radius: 50%;
 float: left;
 transition: background-color 0.6s ease;
 position: absolute;
-top: 60%;
+top: 65%;
 left: 48%;
 }
 
@@ -212,14 +227,18 @@ to {opacity: 1}
   color: #fff;
 }
 
-.imageBox p {
-  padding:99px 0 10px; 
+.imageBox .imageBoxText {
+  padding-top: 108px;
+  color: #fff;
+}
+
+.imageBox .imageBoxText p{
   font-weight:bold;
   font-size:38px;
   color: #fff;
 }
 
-.imageBox p span {
+.imageBox  .imageBoxText p span {
   color: #F9C421;
 }
 
@@ -242,7 +261,7 @@ to {opacity: 1}
 
 /* middle list */
 .commonBox .middleContainer {
-  width: 1070px;
+  width: 1200px;
   float: left;
   margin: 70px auto 0;
   padding-bottom: 100px;
@@ -268,10 +287,15 @@ to {opacity: 1}
   padding: 10px 0;
 }
 
+.middleBox ul li {
+  width: 100%;
+  float: left;
+}
+
 .middleBox ul li span {
   font-size: 15px;
   color: #a9a9a9;
-  margin-left: 40px;
+  float: right;
 }
 
 .middleBox ul li a {
@@ -304,8 +328,8 @@ to {opacity: 1}
   border: 1px solid #ccc;
   width: 100%;
   float: left;
-  padding: 10px;
-  margin: 5px;
+  padding:10px;
+  margin-bottom: 10px;
   background-color: #fcfcfc;
 }
 
@@ -324,12 +348,12 @@ to {opacity: 1}
 
 .footerContainer .footerBox {
   position: relative;
-  min-width: 1070px;
+  min-width: 1200px;
   float: left;
 }
 
 .footerBox ul {
-  width:1070px;
+  width:1200px;
   float: left;
   margin:0 auto;
   padding:14px 0;
@@ -353,7 +377,7 @@ to {opacity: 1}
   position:relative;
   margin:0 auto;
   padding:0 0 30px 0;
-  width:1070px;
+  width:1200px;
   line-height:140%;
   float: left;
 }
@@ -362,6 +386,11 @@ to {opacity: 1}
   width:276px;
   float:left;
   margin:70px 0;
+}
+
+.footerWrapper .footerLogo img {
+  max-width: 100%;
+  vertical-align: middle;
 }
 
 .footerWrapper .footer {
@@ -385,7 +414,7 @@ to {opacity: 1}
 
 .footerWrapper .footerAdmin {
   position:absolute;
-  width: 190px;
+  width: 130px;
   left: 76.5%;
-  bottom:37px;
+  bottom:53px;
 }
