@@ -61,23 +61,23 @@
 
 
     <!-- image slide -->
-    <div class="slideshow-container" style="width: 100%; float:left;">
-      <div class="mySlides fade" style="width: 100%; float:left;">
+    <div class="slideshow-container">
+        <div class="mySlides fade" style="width: 100%; float:left;">
           <img src="./images/main_banner_01.jpg" style="width: 100%; float:left;">
-      </div>
-      <div class="mySlides fade" style="width: 100%; float:left;">
+        </div>
+        <div class="mySlides fade" style="width: 100%; float:left;">
           <img src="./images/main_banner_02.jpg" style="width: 100%; float:left;">
-      </div>
-      <div class="mySlides fade" style="width: 100%; float:left;">
+        </div>
+        <div class="mySlides fade" style="width: 100%; float:left;">
           <img src="./images/main_banner_03.jpg" style="width: 100%; float:left;">
-      </div>
-      <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
-      <a class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></a>
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)" style="margin: 10px;"></span>
-        <span class="dot" onclick="currentSlide(2)" style="margin: 10px 30px;"></span>
-        <span class="dot" onclick="currentSlide(3)" style="margin: 10px 50px;"></span>
-      </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+        <a class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)" style="margin: 10px;"></span>
+          <span class="dot" onclick="currentSlide(2)" style="margin: 10px 30px;"></span>
+          <span class="dot" onclick="currentSlide(3)" style="margin: 10px 50px;"></span>
+        </div>
    </div>
 
     <!-- info_list -->
@@ -123,11 +123,17 @@
     </div>
 
     <!-- 바로가기 img -->
-    <div class="imageBox">
-      <div class="imageBoxText">
-        <p>모든 아이들의 행복을 만드는 곳 <span>희망EVO</span></p>
-        우리동네 아동복지시설을 확인할 수 있는 전국 보육원 검색포털<br>
-        <button type="button" class="linkBtn">바로가기</button>
+    <div class="commonBox imageBox">
+      <div>
+        <div>
+
+          <div class="imageBoxText">
+            <p>모든 아이들의 행복을 만드는 곳 <span>희망EVO</span></p>
+            우리동네 아동복지시설을 확인할 수 있는 전국 보육원 검색포털<br>
+            <button type="button" class="linkBtn">바로가기</button>
+          </div>
+
+        </div>
       </div>
     </div>
 
@@ -138,31 +144,31 @@
               <div class="box middleContainer">
                 <div class="middleBox">
                   <ul>
-                    <li>후원 안내<span><a href="#">+</a></span></li>
-                    <li><a href="#">·샤이닝에서 인원을 ...</a><i class="fas fa-heart"></i><span>[2018-08-24]</span></li>
-                    <li><a href="#">·새롭게 홈페이지를 ...</a><i class="fas fa-heart"></i><span>[2018-08-24]</span></li>
+                    <li><span>후원 안내</span><span class="plus"><a href="#"><img src="./images/more.png" alt="more"></a></span></li>
+                    <li><span class="memo"><a href="#">·샤이닝에서 인원을 ...</a><i class="fas fa-heart"></i></span><span class="date">[2018-08-24]</span></li>
+                    <li><span class="memo"><a href="#">·새롭게 홈페이지를 ...</a><i class="fas fa-heart"></i></span><span class="date">[2018-08-24]</span></li>
                   </ul>
                 </div>
-                <div class="middleBox">
+                <div class="middleBox centerbox">
                   <ul>
-                    <li>후원 신청<span class="plus"><a href="#">+</a></span></li>
-                    <li><a href="#">·후원 문의 드립니다</a><i class="fas fa-heart"></i><span>[2018-09-05]</span></li>
-                    <li><a href="#">·봉사 문의 드립니다</a><i class="fas fa-heart"></i><span>[2018-09-05]</span></li>
+                    <li><span>후원 신청</span><span class="plus"><a href="#"><img src="./images/more.png" alt="more"></a></span></li>
+                    <li><span class="memo"><a href="#">·후원 문의 드립니다</a><i class="fas fa-heart"></i></span><span class="date">[2018-09-05]</span></li>
+                    <li><span class="memo"><a href="#">·봉사 문의 드립니다</a><i class="fas fa-heart"></i></span><span class="date">[2018-09-05]</span></li>
                   </ul>
                 </div>
                 <div class="middleBtn">
-                    <a href="#">
-                      <div class="note">
-                        <span style="float: left; margin-left: 20px;"><i class="far fa-clipboard" style="color: #faa20a; font-size: 18px; margin-right: 10px;"></i> 시설안내 및 현황</span>
-                        <i class="fas fa-angle-right" style="float: right; margin-right: 15px; line-height: 25px;"></i>
+                      <div class="note" style="position: relative;">
+                        <a href="#" style="width: 100%; float: left;">
+                          <span style="float: left; margin-left: 20px;"><i class="far fa-clipboard" style="color: #faa20a; font-size: 18px; margin-right: 10px;"></i> 시설안내 및 현황</span>
+                          <span style="position: absolute; left: 355px;"><i class="fas fa-angle-right"></i></span>
+                        </a>
                       </div>
-                    </a>
-                    <a href="">
-                      <div class="bulb">
-                        <span style="float: left; margin-left: 20px;"><i class="far fa-lightbulb" style="color: #faa20a; font-size: 18px; margin-right: 10px;"></i> 샤이닝보육원 행사일정</span>
-                        <i class="fas fa-angle-right" style="float: right;  margin-right: 15px; line-height: 25px;"></i>
+                      <div class="bulb" style="position: relative;">
+                        <a href="" style="width: 100%; float: left;">
+                          <span style="float: left; margin-left: 20px;"><i class="far fa-lightbulb" style="color: #faa20a; font-size: 18px; margin-right: 10px;"></i> 샤이닝보육원 행사일정</span>
+                          <span style="position: absolute; left: 355px;"><i class="fas fa-angle-right"></i></span>
+                        </a>
                       </div>
-                    </a>
                     <div class="call">
                       <span style="float: left; margin-left: 20px;"><i class="fas fa-phone-alt" style="color: #fff; font-size: 18px; margin-right: 10px; line-height: 25px;"></i> 샤이닝 대표전화 1544-6062</span>
                     </div>
