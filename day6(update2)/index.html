@@ -61,24 +61,31 @@
 
 
     <!-- image slide -->
-    <div class="slideshow-container">
-        <div class="mySlides fade" style="width: 100%; float:left;">
-          <img src="./images/main_banner_01.jpg" style="width: 100%; float:left;">
+    <div class="commonBox">
+        <div class="box slideshow-container">
+          <div class="mySlides fade">
+          <img src="./images/main_banner_01.jpg">
+          </div>
+        <div class="mySlides fade">
+          <img src="./images/main_banner_02.jpg">
         </div>
-        <div class="mySlides fade" style="width: 100%; float:left;">
-          <img src="./images/main_banner_02.jpg" style="width: 100%; float:left;">
+        <div class="mySlides fade">
+          <img src="./images/main_banner_03.jpg">
         </div>
-        <div class="mySlides fade" style="width: 100%; float:left;">
-          <img src="./images/main_banner_03.jpg" style="width: 100%; float:left;">
+        <div>
+
+            <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+            <a class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)" style="margin: 10px;"></span>
+              <span class="dot" onclick="currentSlide(2)" style="margin: 10px 30px;"></span>
+              <span class="dot" onclick="currentSlide(3)" style="margin: 10px 50px;"></span>
+            </div>
+         </div>
+
         </div>
-        <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
-        <a class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></a>
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)" style="margin: 10px;"></span>
-          <span class="dot" onclick="currentSlide(2)" style="margin: 10px 30px;"></span>
-          <span class="dot" onclick="currentSlide(3)" style="margin: 10px 50px;"></span>
-        </div>
-   </div>
+      </div>
+    </div>
 
     <!-- info_list -->
     <div class="commonBox">
