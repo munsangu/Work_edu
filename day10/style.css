@@ -1,6 +1,5 @@
 * {margin: 0; padding: 0; list-style: none; text-decoration: none; color: #000;}
 
-
 .common_box {width: 100%; float: left;}
 .common_box > div {width: 1200px; margin: 0 auto;}
 .common_box > div > div {width: 100%; float: left;}
@@ -13,3 +12,7 @@
 .top_menu li .sub_menu {width:100%; float:left; display: none;}
 .top_menu li:hover .sub_menu {display:block; width: 100%; float: left; background-color: #ccc;}
 .sub_menu > li {width: 100%; float: left; text-align: left; font-size: 13px;}
+
+.main_imgs > div {width: 2000px; margin: 0 auto;}
+.main_img {width: 100%; float: left;}
+.main_img img {width: 100%; float: left;}
