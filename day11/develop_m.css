@@ -1,0 +1,11 @@
+* { margin: 0; padding: 0; box-sizing: border-box; position: relative; font-family: "Noto Sans KR", sans-serif; letter-spacing: -1px; outline: none !important;  list-style: none; text-decoration: none;}
+
+.common_box {width: 90%; float: left; border: 1px solid #ccc; border-radius: 12px; margin: 20% 5%;}
+.common_box ul {width: 100%; float: left;}
+.common_box ul li {width: 100%; float: left;}
+.common_box .logo img {width: 100%; float: left; padding:10% 30%;}
+.common_box .warning_tittle li {text-align: center; color: #cc3333; font-size: 6vw; font-weight: bold; padding-bottom: 30px;}
+.common_box .warning_txt li {text-align: center; font-size: 2vw; font-weight:  500;color: #333;}
+.common_box .btn {text-align: center; padding: 50px 0;}
+.common_box .btn button {width: 50%; padding: 4%; background-color: #000; border: none;} 
+.common_box .btn a button {color: #fff; font-size: 4vw; font-weight: bold;
