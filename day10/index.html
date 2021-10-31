@@ -18,38 +18,38 @@
         
         <div class="top_box">
           <div class="logo">
-            <img src="./images/logo.png" alt="logo">
+            <a href="#" style="width: 100%; float: left;"><img src="./images/logo.png" alt="logo"></a>
           </div>
           <div class="top_menus">
             <ul class="top_menu">
               <li>
-                <a href="#">샤이닝보육원 소개</a>
-                  <ul class="sub_menu">
-                    <li><a href="#">인사말/설립이념</a></li>
-                    <li><a href="#">오시는길</a></li>
-                  </ul>
-              </li>
-              <li>
-                <a href="#">샤이닝보육원 운영안내</a>
+                <a class="not_change" href="#" style="width: 100%; float: left;">샤이닝보육원 소개</a>
                 <ul class="sub_menu">
-                  <li><a href="#">시설안내 및 현황</a></li>
-                  <li><a href="#">입퇴소 절차안내</a></li>
+                  <a href="#" style="width: 100%; float: left;"><li>인사말/설립이념</li></a>
+                  <a href="#" style="width: 100%; float: left;"><li>오시는길</li></a>
                 </ul>
               </li>
               <li>
-                <a href="#">샤이닝보육원 이야기</a>
+                <a class="not_change" href="#" style="width: 100%; float: left;">샤이닝보육원 운영안내</a>
                 <ul class="sub_menu">
-                  <li><a href="#">샤이닝보육원 활동후기</a></li>
-                  <li><a href="#">샤이닝보육원 행사일정</a></li>
-                  <li><a href="#">샤이닝보육원 자유게시판</a></li>
-                  <li><a href="#">샤이닝보육원 갤러리</a></li>
+                  <a href="#" style="width: 100%; float: left;"><li>시설안내 및 현황</li></a>
+                  <a href="#" style="width: 100%; float: left;"><li>입퇴소 절차안내</li></a>
                 </ul>
               </li>
               <li>
-                <a href="#">봉사활동/후원</a>
+                <a class="not_change" href="#" style="width: 100%; float: left;">샤이닝보육원 이야기</a>
                 <ul class="sub_menu">
-                  <li><a href="#">봉사활동/후원 안내</a></li>
-                  <li><a href="#">봉사활동/후원 신청</a></li>
+                  <a href="#" style="width: 100%; float: left;"><li>샤이닝보육원 활동후기</li></a>
+                  <a href="#" style="width: 100%; float: left;"><li>샤이닝보육원 행사일정</li></a>
+                  <a href="#" style="width: 100%; float: left;"><li>샤이닝보육원 자유게시판</li></a>
+                  <a href="#" style="width: 100%; float: left;"><li>샤이닝보육원 갤러리</li></a>
+                </ul>
+              </li>
+              <li>
+                <a class="not_change" href="#" style="width: 100%; float: left;">봉사활동/후원</a>
+                <ul class="sub_menu">
+                  <a href="#" style="width: 100%; float: left;"><li>봉사활동/후원 안내</li></a>
+                  <a href="#" style="width: 100%; float: left;"><li>봉사활동/후원 신청</li></a>
                 </ul>
               </li>
             </ul>
@@ -64,25 +64,241 @@
     <div>
       <div>
 
-        <div class="main_img">
-          <img src="./images/main_banner_01.jpg" alt="1">
+        <div class="slideshow">
+          <div class="main_img fade">
+            <img src="./images/main_banner_01.jpg" alt="1">
+          </div>
+          <div class="main_img fade">
+            <img src="./images/main_banner_02.jpg" alt="1">
+          </div>
+          <div class="main_img fade">
+            <img src="./images/main_banner_03.jpg" alt="1">
+          </div>
+  
+  
+          <div class="img_move">
+  
+            <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+            <a class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-right"></i></a>
+  
+          </div>
+  
+          <div class="img_state">
+  
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            
+          </div>
         </div>
 
-        <div class="img_move">
-          <i class="fas fa-chevron-left"></i>
-          <i class="fas fa-chevron-right"></i>
-        </div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+carousel();
 
-        <div class="img_state">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("main_img");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+function carousel() {
+            let i;
+            let x = document.getElementsByClassName("main_img");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {
+                slideIndex = 1
+            }
+            x[slideIndex - 1].style.display = "block";
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            dots[slideIndex - 1].className += " active";
+            setTimeout(carousel, 5000);
+}
+
+</script>
+
       </div>
     </div>
   </div>
+
+
+  <div class="common_box dream_box">
+    <div>
+      <div>
+
+        <div class="dream_tittle">
+
+          <p><span>꿈</span>이 가득한 집, <span>사랑</span>이 가득한 집</p>
+          <img src="./images/tit_bg.png" alt="1">
+
+        </div>
+
+        <div class="dream_list">
+
+            <ul>
+              <a href="#" style="width: 100%; float: left;">
+                <li><img src="./images/m0101.jpg" alt="1"></li>
+                <li>보육원 안내</li>
+                <li>국내입양기관 샤이닝보육원이 함께합니다.<br>입양은 아름다운 축복입니다.</li>
+                <li><i class="fas fa-chevron-right"></i></li>
+              </a>
+            </ul>
+
+          
+            <ul>
+              <a href="#" style="width: 100%; float: left;">
+                <li><img src="./images/m0201.jpg" alt="1"></li>
+                <li>입양 안내</li>
+                <li>국내입양기관 샤이닝보육원이 함께합니다.<br>입양은 아름다운 축복입니다.</li>
+                <li><i class="fas fa-chevron-right"></i></li>
+              </a>
+            </ul>
+
+
+            <ul>
+              <a href="#" style="width: 100%; float: left;">
+                <li><img src="./images/m0301.jpg" alt="1"></li>
+                <li>봉사 신청</li>
+                <li>국내입양기관 샤이닝보육원이 함께합니다.<br>입양은 아름다운 축복입니다.</li>
+                <li><i class="fas fa-chevron-right"></i></li>
+              </a>
+            </ul>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="common_box eyo_box">
+    <div>
+      <div>
+
+        <ul>
+          <li>모든 아이들의 행복을 만드는 곳 <span>희망EYO</span></li>
+          <li>우리동네 아동복지시설을 확인할 수 있는 전국 보육원 검색포털</li>
+          <li><a href="#"><button>바로가기</button></a></li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="common_box donation_box">
+    <div>
+      <div>
+
+        <div class="donation_left">
+          <ul>
+            <li><span class="donation_txt">후원안내</span><a href="#" style="width: 11%; float: left;"><span class="donation_icon"><img src="./images/more.png" alt="1"></span></a></li>
+            <li><a href="#"><span class="donation_dot"><img src="./images/dot.png" alt="1">샤이닝에서 인원을 ... <i class="fas fa-heart"></i></span class="donation_date"></a><span>[2018-08-24]</span></li>
+            <li><a href="#"><span class="donation_dot"><img src="./images/dot.png" alt="1">새롭게 홈페이지를 ... <i class="fas fa-heart"></i></span class="donation_date"></a><span>[2018-08-24]</span></li>
+          </ul>
+          <ul>
+            <li><span class="donation_txt">후원신청</span><a href="#" style="width: 11%; float: left;"><span class="donation_icon"><img src="./images/more.png" alt="1"></span></a></li>
+            <li><a href="#"><span class="donation_dot"><img src="./images/dot.png" alt="1">후원 문의 드립니다<i class="fas fa-heart"></i></span class="donation_date"></a><span>[2018-09-05]</span></li>
+            <li><a href="#"><span class="donation_dot"><img src="./images/dot.png" alt="1">봉사 문의 드립니다<i class="fas fa-heart"></i></span class="donation_date"></a><span>[2018-09-05]</span></li>
+          </ul>
+        </div>
+
+        <div class="donation_right">
+          <a href="#">
+            <ul class="inform_event">
+              <li class="img_padding"><img src="./images/icon_01.png" alt="1"></li>
+              <li>시설안내 및 현황</li>
+              <li><img src="./images/link.png" alt="1"></li>
+            </ul>
+          </a>
+          <a href="#">
+            <ul class="inform_event">
+              <li class="img_padding2"><img src="./images/icon_02.png" alt="1"></li>
+              <li>샤이닝보육원 행사일정</li>
+              <li><img src="./images/link.png" alt="1"></li>
+            </ul>
+          </a>
+          <ul class="tel">
+            <li class="img_padding3"><img src="./images/icon_03.png" alt="1"></li>
+            <li>샤이닝 대표전화</li>
+            <li>1544-6062</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="common_box footer">
+    <div>
+      <div>
+
+        <div class="footer_nav">
+          <ul>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">봉사신청</a></li>
+            <li><a href="#">입양안내</a></li>
+            <li><a href="#">오시는길</a></li>
+          </ul>
+        </div>
+
+        <div class="footer_wrapper">
+
+          <div class="footer_logo">
+            <img src="./images/ft_logo.png" alt="1">
+          </div>
+
+          <div class="footer_txt">
+            <ul>
+              <li>경기도 부천시 부흥로 258 일산빌딩 5층 샤이닝</li>
+              <li>사업자 번호 : 130-37-46318(등록2007년) 통신판매업종신고 : 제2010-경기부천-924호 상호 : 샤이닝 대표 : 오성민</li>
+              <li>고객센터:1544-0634 팩스:0505-200-6060 이메일:hdweb@hdweb.co.kr</li>
+              <li>Copyright ⓒ <span>샤이닝-에듀홈페이지 샘플</span>All rights reserved.</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="footer_adm">
+          <ul>
+            <li><a href="#"><img src="./images/adm.png" alt="1"></a></li>
+            <li><a href="#"><img src="./images/make24.png" alt="1"></a></li>
+          </ul>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
 
 </body>
 </html>
